@@ -6,7 +6,7 @@ Projeto desenvolvido como parte do meu aprendizado em Engenharia de Software.
 
 Criar uma aplicação para apoiar equipes comerciais externas, permitindo o registro de visitas, acompanhamento de negociações e geração de indicadores gerenciais.
 
-## Funcionalidades planejadas
+## Funcionalidades futuras
 
 * Cadastro de clientes
 * Registro de visitas
