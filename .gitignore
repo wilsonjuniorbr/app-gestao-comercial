@@ -1,0 +1,20 @@
+# Ambiente Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Banco de dados local e dados exportados
+python/*.db
+python/*.db-*
+*.sqlite
+*.sqlite3
+*.csv
+
+# Ferramentas e sistema operacional
+.streamlit/secrets.toml
+.pytest_cache/
+.coverage
+.DS_Store
+Thumbs.db
