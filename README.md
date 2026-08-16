@@ -1,36 +1,75 @@
 # Aplicativo de Gestão Comercial para Equipes Externas
 
-Projeto desenvolvido como parte do meu aprendizado em Engenharia de Software.
+Projeto de portfólio desenvolvido para aplicar conceitos de **Engenharia de Software, Banco de Dados, Python, análise de dados e gestão comercial**.
 
 ## Objetivo
 
-Criar uma aplicação para apoiar equipes comerciais externas, permitindo o registro de visitas, acompanhamento de negociações e geração de indicadores gerenciais.
+Apoiar equipes comerciais externas no acompanhamento de clientes, vendedores, visitas, geolocalização, negociações e indicadores.
 
-## Funcionalidades futuras
+## Funcionalidades
 
-* Cadastro de clientes
-* Registro de visitas
-* Check-in por geolocalização (GPS)
-* Acompanhamento de negociações
-* Banco de dados SQL
-* Dashboards em Power BI
-* Automação de relatórios
+- Cadastro de clientes e vendedores
+- Associação entre cliente e vendedor
+- Registro de visitas
+- Registro de coordenadas GPS
+- Pipeline de negociações
+- Consultas SQL
+- Estrutura preparada para Power BI
+- Base Python para automação e evolução da aplicação
 
 ## Tecnologias
 
-* Python
-* SQL
-* Power BI
-* Git e GitHub
+- **Python**
+- **SQL / SQLite**
+- **Power BI**
+- **Git e GitHub**
 
-## Estrutura inicial do projeto
+## Estrutura
 
-* docs/ → documentação do projeto
-* banco/ → scripts SQL e estrutura do banco de dados
-* python/ → código da aplicação
-* powerbi/ → dashboards e indicadores
+```text
+aplicativo-gestao-comercial/
+├── banco/
+│   ├── 01_clientes.sql
+│   ├── 02_vendedores.sql
+│   ├── 03_consultas.sql
+│   └── 04_relacionamentos.sql
+├── docs/
+│   ├── arquitetura.md
+│   └── modelo-dados.md
+├── python/
+│   ├── app.py
+│   ├── requirements.txt
+│   └── README.md
+├── powerbi/
+│   └── README.md
+└── README.md
+```
+
+## Arquitetura
+
+```text
+Vendedores
+    │
+    ├── Clientes
+    │      ├── Visitas
+    │      └── Negociações
+    │
+    └── Negociações
+
+             ↓
+        Banco SQL/SQLite
+             ↓
+          Python
+             ↓
+          Power BI
+```
+
+## Status
+
+**Versão 1 — estruturação do projeto**
+
+A base de dados, arquitetura, módulo Python e documentação inicial estão organizados. Próximas evoluções: autenticação, interface web, permissões, integração com dados reais e publicação do dashboard.
 
 ## Observação
 
-Este projeto utiliza dados fictícios e anonimizados, criados exclusivamente para fins de estudo e desenvolvimento de portfólio.
-
+O projeto utiliza dados fictícios e anonimizados, criados exclusivamente para estudo e portfólio.
